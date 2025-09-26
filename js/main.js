@@ -71,7 +71,7 @@ if (contactForm) {
     const message = document.querySelector('#message').value.trim();
 
     if (name && email && message) {
-      alert(Thank `you ${name}! Your message has been sent.`);
+      alert(`Thank you ${name}! Your message has been sent.`);
       contactForm.reset();
     } else {
       alert("Please fill in all fields before submitting.");
