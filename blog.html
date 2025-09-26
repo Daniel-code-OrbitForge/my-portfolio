@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Harrison Daniel Chinomso">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Read my thoughts on technology, psychology, and the intersection of both.">
+  <title>Blog | Harrison Daniel Chinomso - Web Developer</title>
+  
+  <!-- Importing Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Importing Font Awesome Library File -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Linking External Stylesheet Files === Main CSS === -->
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/animations.css">
+  <link rel="stylesheet" href="Css/mediaQuery.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/icons8-globe.gif">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="blog, technology, psychology, programming, web development, blockchain, crypto">
+</head>
+
+<body>
+  <!-- ===== Header & Navigation ===== -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">&lt;Harrisonjrn /&gt;</a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>My Blog</h1>
+      <p class="subtitle">Thoughts on technology, psychology, and everything in between</p>
+    </section>
+
+    <div class="blog-grid">
+      <article class="blog-card">
+        <a href="blog-posts/psychology-tech.html" class="blog-image-link">
+          <div class="blog-image">
+            <img src="assets/images/replica.webp" alt="Psychology and Technology">
+            <span class="blog-category">Psychology & Tech</span>
+          </div>
+        </a>
+        <div class="blog-content">
+          <h2><a href="blog-posts/psychology-tech.html" class="blog-post-link">The Intersection of Psychology and Technology</a></h2>
+          <div class="blog-meta">
+            <span class="date">August 26, 2025</span>
+            <span class="read-time">5 min read</span>
+          </div>
+          <p>
+            As someone fascinated by psychology and technology, I've noticed how both fields 
+            influence human behavior. From social media to UX design, understanding the mind 
+            is crucial in creating better digital products.
+          </p>
+          <a href="blog-posts/psychology-tech.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <a href="blog-posts/blockchain.html" class="blog-image-link">
+          <div class="blog-image">
+            <img src="assets/images/vblock.png" alt="Blockchain Technology">
+            <span class="blog-category">Blockchain</span>
+          </div>
+        </a>
+        <div class="blog-content">
+          <h2><a href="blog-posts/blockchain.html" class="blog-post-link">Blockchain Beyond Cryptocurrency</a></h2>
+          <div class="blog-meta">
+            <span class="date">July 25, 2025</span>
+            <span class="read-time">7 min read</span>
+          </div>
+          <p>
+            Blockchain is more than just Bitcoin or Ethereum. It's a technology reshaping 
+            finance, healthcare, and even education. Here's why I believe blockchain is the 
+            foundation of a decentralized future.
+          </p>
+          <a href="blog-posts/blockchain.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <a href="blog-posts/history.html" class="blog-image-link">
+          <div class="blog-image">
+            <img src="assets/images/OIP (1).webp" alt="History Lessons">
+            <span class="blog-category">History</span>
+          </div>
+        </a>
+        <div class="blog-content">
+          <h2><a href="blog-posts/history.html" class="blog-post-link">Lessons from History for Modern Problem-Solving</a></h2>
+          <div class="blog-meta">
+            <span class="date">August 15, 2025</span>
+            <span class="read-time">6 min read</span>
+          </div>
+          <p>
+            History has always fascinated me because it repeats itself in patterns. By learning 
+            from past events, we can develop better strategies for today's challenges.
+          </p>
+          <a href="blog-posts/history.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <!-- New Blockchain/Crypto Posts -->
+      <article class="blog-card">
+        <a href="blog-posts/defi.html" class="blog-image-link">
+          <div class="blog-image">
+            <img src="assets/images/OIP (6).webp" alt="DeFi Revolution">
+            <span class="blog-category">Blockchain</span>
+          </div>
+        </a>
+        <div class="blog-content">
+          <h2><a href="blog-posts/defi.html" class="blog-post-link">DeFi and the Future of Finance</a></h2>
+          <div class="blog-meta">
+            <span class="date">September 3, 2025</span>
+            <span class="read-time">6 min read</span>
+          </div>
+          <p>
+            Decentralized Finance (DeFi) is challenging traditional banking by giving power 
+            back to individuals. Here's how smart contracts are shaping the future of money.
+          </p>
+          <a href="blog-posts/defi.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <a href="blog-posts/nft.html" class="blog-image-link">
+          <div class="blog-image">
+            <img src="assets/images/finger-touch.jpg" alt="NFT Impact">
+            <span class="blog-category">Blockchain</span>
+          </div>
+        </a>
+        <div class="blog-content">
+          <h2><a href="blog-posts/nft.html" class="blog-post-link">NFTs Beyond Art: Real-World Applications</a></h2>
+          <div class="blog-meta">
+            <span class="date">September 5, 2025</span>
+            <span class="read-time">5 min read</span>
+          </div>
+          <p>
+            NFTs are not just digital art. They're transforming industries like real estate, 
+            gaming, and intellectual property rights in unexpected ways.
+          </p>
+          <a href="blog-posts/nft.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card">
+        <a href="blog-posts/web3.html" class="blog-image-link">
+          <div class="blog-image">
+            <img src="assets/images/Developments.webp" alt="Web3 Innovations">
+            <span class="blog-category">Blockchain</span>
+          </div>
+        </a>
+        <div class="blog-content">
+          <h2><a href="blog-posts/web3.html" class="blog-post-link">Web3: The Next Era of the Internet</a></h2>
+          <div class="blog-meta">
+            <span class="date">August 1, 2025</span>
+            <span class="read-time">7 min read</span>
+          </div>
+          <p>
+            Web3 promises a more decentralized, user-owned internet. From DAOs to tokenized 
+            communities, this shift could redefine how we connect online.
+          </p>
+          <a href="blog-posts/web3.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+    
+    <div class="pagination">
+      <span>Page 1 of 3</span>
+      <a href="olderPosts.html" class="btn">Newer Posts</a>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">&lt;Harrisonjrn /&gt;</a>
+          <p>Building digital experiences that make an impact.</p>
+          <div class="social-links">
+            <a href="https://github.com/Daniel-code-OrbitForge" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harrison-daniel-36bb84378" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/DanielH62532053" aria-label="Twitter" class="social-link"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/Harrison.c.daniel" aria-label="Facebook" class="social-link"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Get In Touch</h3>
+          <p><i class="fas fa-envelope"></i> harrisonjrn@proton.me</p>
+          <p><i class="fas fa-phone"></i> +233 (0) 559-080-863</p>
+          <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> Harrison Daniel Chinomso. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <span>|</span>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  
+  <script>
+    // Update current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Back to top button
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>

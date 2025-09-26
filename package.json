@@ -1,0 +1,24 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Hello, welcome to my personal portfolio and integrated blog project.  \r This is more than just a static website, it’s a **digital canvas** where I showcase my work in **software engineering**, while also exploring my passions in **history, psychology, and emerging technologies like blockchain**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["history", 
+  "psychology", 
+  "blockchain", 
+  "portfolio", 
+  "blog", 
+  "software engineering", 
+  "web development", 
+  "HTML", 
+  "CSS", 
+  "JavaScript", 
+  "mediaQuery", 
+  "responsive design"
+],
+  "author": "Harrison Daniel Chinomso",
+  "license": "ISC"
+}

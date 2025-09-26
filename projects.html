@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="projects, portfolio, web development, coding, software, software development, software engineer">
+  <meta name="author" content="Harrison Daniel Chinomso">
+  <meta name="description" content="Explore Harrison Daniel's portfolio of web development projects. See my work and the technologies I've used.">
+  <title>Projects | Harrison Daniel Chinomso - Web Developer</title>
+  
+  <!-- Importing Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Importing Font Awesome Library File -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Linking External Stylesheet Files === Main CSS === -->
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/animations.css">
+  <link rel="stylesheet" href="Css/mediaQuery.css">
+  
+  <!-- Favicon === Site's icon === -->
+  <link rel="icon" type="image/png" href="assets/icons/icons8-globe.gif">
+</head>
+
+<body>
+  <!-- ===== Header & Navigation ===== -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">&lt;Harrisonjrn /&gt;</a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Page Header ===== -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-content">
+        <h1 class="page-title">My Projects</h1>
+        <p class="page-subtitle">Ideas turned into reality with clean, efficient code</p>
+        <div class="page-header-actions">
+          <a href="#featured" class="btn btn-primary">View Featured</a>
+          <a href="#all-projects" class="btn btn-outline">Browse All</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Featured Project ===== -->
+  <section id="featured" class="featured-project section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Showcase Project</span>
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-description">A highlight of one of my most comprehensive projects</p>
+      </div>
+      
+      <div class="project-card featured">
+      
+        <div class="project-content">
+          <div class="project-header">
+            <div class="project-badge">Featured</div>
+            <h3 class="project-title">Smart To-Do + Budget Tracker</h3>
+            <p class="project-subtitle">Personal Organizer plus Finance Management Application</p>
+          </div>
+          
+          <div class="project-description">
+            <p>A comprehensive Personal Organizer plus financial management tool that helps users track expenses, set budgets, and visualize their spending patterns through interactive charts and reports. Built with a focus on user experience and data security.</p>
+            
+            <div class="project-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Real-time expense tracking and categorization</li>
+                <li>Interactive financial dashboards</li>
+                <li>Personal Organizer</li>
+                <li>Secure user authentication and storage</li>
+                <li>Cross-platform compatibility</li>
+              </ul>
+            </div>
+            
+            <div class="project-tech">
+              <h4>Technologies Used:</h4>
+              <div class="tech-tags">
+                <span>Html</Html></span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Express</span>
+                <span>Chart.js</span>
+                <span>JWT Auth</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-actions">
+            <a href="https://calm-biscotti.netlify.app/" class="btn btn-primary">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/Daniel-code-OrbitForge/Personal-Organizer.git" class="btn btn-outline">
+              <i class="fab fa-github"></i> View Code
+            </a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== All Projects ===== -->
+  <section id="all-projects" class="all-projects section-padding bg-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">All Projects</h2>
+        <p class="section-description">A collection of my recent work and side projects</p>
+        <p class="section-description">Note: most of these projects haven't been deployed yet but will be available upon request.</p>
+        
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design">UI/UX</button>
+        </div>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="web">
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">A modern, responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+            <div class="project-tech-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>mediaQuery</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-primary">View Live</a>
+              <a href="#" class="btn btn-sm btn-outline">Source Code</a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Project 2 -->
+        <article class="project-card" data-category="web">
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Platform</h3>
+            <p class="project-description">Full-featured online store with product catalog and payment integration.</p>
+            <div class="project-tech-tags">
+              <span>Html</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>MySQl</span>
+              <span>Stripe</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-primary">View Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Project 3 -->
+        <article class="project-card" data-category="mobile">
+          <div class="project-content">
+            <h3 class="project-title">Professional Catering Website</h3>
+            <p class="project-description">A Professional Catering website </p>
+            <div class="project-tech-tags">
+              <span>React.js</span>
+              <span>Firebase</span>
+              <span>Node.js</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-primary">View Demo</a>
+              <a href="#" class="btn btn-sm btn-outline">Case Study</a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Project 4 -->
+        <article class="project-card" data-category="design">
+          <div class="project-content">
+            <h3 class="project-title">UI/UX Design System</h3>
+            <p class="project-description">Comprehensive design system with reusable components and guidelines.</p>
+            <div class="project-tech-tags">
+              <span>React</span>
+              <span>Storybook</span>
+              <span>Design Tokens</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn btn-sm btn-primary">View Prototype</a>
+              <a href="#" class="btn btn-sm btn-outline">Case Study</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <div class="text-center" style="margin-top: 4rem;">
+        <a href="https://github.com/Daniel-code-OrbitForge" class="btn btn-primary">
+          <i class="fab fa-github"></i> View More on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Call to Action Buttons ===== -->
+  <section class="cta-section bg-primary">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Have a project in mind?</h2>
+        <p>I'm currently available for freelance work. Let's build something amazing together! <i class="fas fa-rocket"></i></p>
+        <a href="contact.html" class="btn btn-light">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">&lt;Harrisonjrn /&gt;</a>
+          <p>Building digital experiences that make an impact.</p>
+          <div class="social-links">
+            <a href="https://github.com/Daniel-code-OrbitForge" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harrison-daniel-36bb84378" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/DanielH62532053" aria-label="Twitter" class="social-link"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/Harrison.c.daniel" aria-label="Facebook" class="social-link"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Get In Touch</h3>
+          <p><i class="fas fa-envelope"></i> harrisonjrn@proton.me</p>
+          <p><i class="fas fa-phone"></i> +233 (0) 559-080-863</p>
+          <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> Harrison Daniel Chinomso. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <span>|</span>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  
+  <script>
+    // Update current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Back to top button
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Project filter functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        const filterValue = button.getAttribute('data-filter');
+        
+        projectCards.forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

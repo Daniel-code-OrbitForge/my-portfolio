@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Harrison Daniel Chinomso">
+  <meta name="description" content="Exploring how cognitive biases influence software design decisions and user experience, and why developers should integrate psychology into their work.">
+  <title>Cognitive Bias in Software Design | Harrison's Blog</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../Css/style.css">
+  <link rel="stylesheet" href="../Css/animations.css">
+  <link rel="stylesheet" href="../Css/mediaQuery.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="icon/gif" href="../assets/icons/icons8-globe.gif">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="cognitive bias, psychology in software, UX design, software engineering, user experience, psychology and technology">
+  
+  <style>
+    .blog-post {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    
+    .blog-post-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .blog-post-meta {
+      color: #666;
+      font-size: 0.9rem;
+      margin: 1rem 0;
+    }
+    
+    .blog-post-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+    }
+    
+    .blog-post-content {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    
+    .blog-post-content h2 {
+      margin-top: 2rem;
+      color: #2c3e50;
+    }
+    
+    .blog-post-content p {
+      margin-bottom: 1.5rem;
+    }
+
+    .back-to-blog {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .back-to-blog:hover {
+      text-decoration: underline;
+    }
+    
+    .blog-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .blog-tag {
+      background: #f0f2f5;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header & Navigation ===== -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="../index.html" class="logo">&lt;Harrisonjrn /&gt;</a>
+      
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../about.html" class="nav-link">About</a></li>
+        <li><a href="../projects.html" class="nav-link">Projects</a></li>
+        <li><a href="../blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <article class="blog-post">
+      <header class="blog-post-header">
+        <h1>Cognitive Bias in Software Design: Why Psychology Matters in Tech</h1>
+        <div class="blog-post-meta">
+          <span>By Harrison Daniel Chinomso | August 28, 2025 | 6 min read</span>
+        </div>
+      </header>
+      
+      <img src="../assets/images/zwegypt.png" alt="Cognitive Bias in Software Design" class="blog-post-image">
+      
+      <div class="blog-post-content">
+        <p>Software isn’t built in a vacuum, it’s created by humans and used by humans, 
+          which means psychology plays a massive role in how it’s designed, perceived, and adopted. 
+          One of the biggest psychological influences in software engineering is 
+          <strong>cognitive bias</strong>, the unconscious mental shortcuts that shape our decisions.</p>
+        
+        <h2>What Are Cognitive Biases?</h2>
+        <p>Cognitive biases are systematic patterns of deviation from rational judgment. They help 
+          our brains make quick decisions but can also lead to errors. In software design, 
+          both developers and users are influenced by these biases, often without realizing it.</p>
+        
+        <h2>Bias in Developers</h2>
+        <p>Developers are not immune to biases. For example:</p>
+        <ul>
+          <li><strong>Confirmation Bias:</strong> Tendency to favor code or design choices that confirm existing beliefs.</li>
+          <li><strong>Overconfidence Bias:</strong> Believing a system is flawless because you built it, ignoring potential edge cases.</li>
+          <li><strong>Anchoring:</strong> Relying too heavily on the first idea or framework encountered, even if better options exist.</li>
+        </ul>
+        <p>These biases can lead to inefficient designs or overlooked problems.</p>
+        
+        <h2>Bias in Users</h2>
+        <p>Users also bring biases when interacting with software:</p>
+        <ul>
+          <li><strong>Familiarity Bias:</strong> Preferring interfaces that look like ones they’ve used before.</li>
+          <li><strong>Framing Effect:</strong> Responding differently depending on how options are presented (e.g., “90% success” vs “10% failure”).</li>
+          <li><strong>Status Quo Bias:</strong> Resistance to change, making them hesitant to adopt new features.</li>
+        </ul>
+        
+        <h2>Designing with Bias in Mind</h2>
+        <p>Instead of ignoring biases, good designers account for them. This means:</p>
+        <ul>
+          <li>Testing with diverse groups to avoid cultural and demographic blind spots.</li>
+          <li>Using clear, consistent language to reduce framing effects.</li>
+          <li>Designing intuitive layouts that respect user habits but gently guide them toward better practices.</li>
+        </ul>
+        
+        <h2>The Psychology + Tech Synergy</h2>
+        <p>Bridging psychology and technology creates more human-centered software. By recognizing 
+          cognitive biases, developers can avoid pitfalls in their own work and design experiences 
+          that feel natural, supportive, and empowering for users.</p>
+        
+        <h2>Conclusion</h2>
+        <p>Cognitive bias is not something to be eliminated, it’s part of being human. The challenge 
+          for software designers and engineers is to acknowledge it, plan for it, and build systems 
+          that accommodate human nature instead of fighting it.</p>
+        
+        <div class="blog-tags">
+          <span class="blog-tag">#CognitiveBias</span>
+          <span class="blog-tag">#Psychology</span>
+          <span class="blog-tag">#UXDesign</span>
+          <span class="blog-tag">#SoftwareEngineering</span>
+          <span class="blog-tag">#HumanCenteredDesign</span>
+        </div>
+        
+        <a href="../olderPosts.html" class="back-to-blog">
+          <i class="fas fa-arrow-left"></i> Back to Blog
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="../index.html" class="footer-logo">&lt;Harrisonjrn /&gt;</a>
+          <p>Building digital experiences that makes an impact.</p>
+          <div class="social-links">
+            <a href="https://github.com/Daniel-code-OrbitForge" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harrison-daniel-36bb84378" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/DanielH62532053" aria-label="Twitter" class="social-link"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/Harrison.c.daniel" aria-label="Facebook" class="social-link"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Get In Touch</h3>
+          <p><i class="fas fa-envelope"></i> harrisonjrn@proton.me</p>
+          <p><i class="fas fa-phone"></i> +233 (0) 559-080-863</p>
+          <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> Harrison Daniel Chinomso. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="../privacy.html">Privacy Policy</a>
+          <span>|</span>
+          <a href="../terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
