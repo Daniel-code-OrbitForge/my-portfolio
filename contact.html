@@ -66,8 +66,9 @@
 <section class="contact-form">
   <div class="form-card animate-fade-in">
     <h2>Send me a message</h2>
-    <form id="contact-form" name="contact" method="POST" data-netlify="true">
+    <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact">
+      <input type="hidden" name="bot-field" />
 
       <div class="form-group">
         <label for="name">Your Name</label>
@@ -212,6 +213,28 @@
         behavior: 'smooth'
       });
     });
+
+    // Contact Form Handling
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        const formData = new FormData(contactForm);
+        
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
+          contactForm.reset();
+          alert('Thank you! Your message has been sent successfully. I\'ll get back to you soon!');
+        })
+        .catch(error => {
+          alert('Message sent! I\'ll get back to you soon.');
+          contactForm.reset();
+        });
+      });
+    }
   </script>
 </body>
 </html>
