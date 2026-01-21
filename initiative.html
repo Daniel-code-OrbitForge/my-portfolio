@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Harrison Daniel Chinomso">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Cyber•Data Guild - A responsibility-driven peer learning community for cybersecurity, ethical hacking, and data analytics.">
+  <title>Initiative | Cyber•Data Guild - Harrison Daniel Chinomso</title>
+  
+  <!-- Importing Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Importing Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Linking External Stylesheet Files === Main CSS === -->
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="stylesheet" href="Css/animations.css">
+  <link rel="stylesheet" href="Css/mediaQuery.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/icons8-globe.gif">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="Cyber•Data Guild, cybersecurity, ethical hacking, data analytics, peer learning, initiative">
+  
+  <style>
+    .initiative-hero {
+      background: var(--gradient);
+      padding: 4rem 0;
+      color: white;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .initiative-hero h1 {
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .initiative-hero .subtitle {
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .initiative-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .initiative-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+      align-items: start;
+    }
+
+    .initiative-info {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+
+    .initiative-info:hover {
+      background: var(--card-hover);
+      border-color: var(--accent-color);
+      box-shadow: 0 8px 24px var(--shadow-color);
+    }
+
+    .initiative-info h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--accent-color);
+    }
+
+    .initiative-info p {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    .focus-areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .focus-item {
+      background: var(--gradient);
+      color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .focus-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(109, 40, 217, 0.3);
+    }
+
+    .form-section {
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      max-width: 100%;
+    }
+
+    .form-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+    }
+
+    .form-intro {
+      background: var(--gradient);
+      color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      border-left: 4px solid white;
+    }
+
+    .form-intro strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--text-color);
+      font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 0.75rem;
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+      background: var(--card-bg);
+      color: var(--text-color);
+      transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--accent-color);
+      background: var(--card-hover);
+      box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .radio-option {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .radio-option input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: var(--accent-color);
+    }
+
+    .radio-option label {
+      margin: 0;
+      font-weight: 500;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .checkbox-option {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .checkbox-option input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: var(--accent-color);
+    }
+
+    .checkbox-option label {
+      margin: 0;
+      font-weight: 500;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .form-section .btn {
+      margin-top: 1rem;
+    }
+
+    .response-message {
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      display: none;
+    }
+
+    .response-message.success {
+      background: rgba(16, 185, 129, 0.1);
+      border: 2px solid var(--success);
+      color: var(--success);
+      display: block;
+    }
+
+    .response-message.error {
+      background: rgba(239, 68, 68, 0.1);
+      border: 2px solid var(--danger);
+      color: var(--danger);
+      display: block;
+    }
+
+    .whatsapp-link {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+      color: white;
+      border-radius: 8px;
+      text-align: center;
+      display: none;
+    }
+
+    .whatsapp-link a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      transition: var(--transition);
+    }
+
+    .whatsapp-link a:hover {
+      background: rgba(0, 0, 0, 0.3);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .initiative-content {
+        grid-template-columns: 1fr;
+      }
+
+      .initiative-hero h1 {
+        font-size: 2rem;
+      }
+
+      .focus-areas {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header & Navigation ===== -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">&lt;Harrisonjrn /&gt;</a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="initiative.html" class="nav-link active">Initiative</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Initiative Hero ===== -->
+  <section class="initiative-hero">
+    <div class="container">
+      <div class="initiative-badge">
+        <i class="fas fa-lightbulb"></i> New Initiative
+      </div>
+      <h1>Cyber•Data Guild</h1>
+      <p class="subtitle">A Responsibility-Driven Peer Learning Community</p>
+    </div>
+  </section>
+
+  <!-- ===== Main Content ===== -->
+  <main class="container">
+    <!-- Initiative Overview -->
+    <section class="initiative-content">
+      <!-- Info Section -->
+      <div class="initiative-info">
+        <h2><i class="fas fa-shield-alt"></i> About The Initiative</h2>
+        <p>
+          <strong>Cyber•Data Guild</strong> is a responsibility-driven peer learning community designed to help learners build real-world skills in cybersecurity, ethical hacking, and data analytics through self-paced learning, weekly accountability, and hands-on projects.
+        </p>
+        <p>
+          The initiative emphasizes <strong>portfolio building, practical assignments, and peer review</strong>, rather than certificate collection. We believe in creating a supportive environment where members challenge each other to grow and deliver quality work.
+        </p>
+        <div class="focus-areas">
+          <div class="focus-item">
+            <i class="fas fa-lock"></i>
+            <div>Cybersecurity</div>
+          </div>
+          <div class="focus-item">
+            <i class="fas fa-user-secret"></i>
+            <div>Ethical Hacking</div>
+          </div>
+          <div class="focus-item">
+            <i class="fas fa-chart-bar"></i>
+            <div>Data Analytics</div>
+          </div>
+          <div class="focus-item">
+            <i class="fas fa-cube"></i>
+            <div>Hybrid Skills</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Features -->
+      <div class="initiative-info">
+        <h2><i class="fas fa-star"></i> What Makes Us Different</h2>
+        <ul style="list-style: none;">
+          <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+            <span style="color: var(--accent-color); font-weight: 600; min-width: 24px;">✓</span>
+            <span><strong>Weekly Accountability Checks</strong> - Stay on track with group milestones and peer support</span>
+          </li>
+          <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+            <span style="color: var(--accent-color); font-weight: 600; min-width: 24px;">✓</span>
+            <span><strong>Real-World Projects</strong> - Build portfolio-worthy projects that demonstrate actual skills</span>
+          </li>
+          <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+            <span style="color: var(--accent-color); font-weight: 600; min-width: 24px;">✓</span>
+            <span><strong>Peer Review Culture</strong> - Learn from and improve alongside fellow learners</span>
+          </li>
+          <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+            <span style="color: var(--accent-color); font-weight: 600; min-width: 24px;">✓</span>
+            <span><strong>Self-Paced Learning</strong> - Work at your own speed while maintaining group momentum</span>
+          </li>
+          <li style="margin-bottom: 1rem; display: flex; gap: 1rem;">
+            <span style="color: var(--accent-color); font-weight: 600; min-width: 24px;">✓</span>
+            <span><strong>Community Support</strong> - Collaborate with like-minded learners on WhatsApp</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Screening Form -->
+    <section class="form-section animate-fade-in">
+      <h2><i class="fas fa-clipboard-check"></i> Join The Guild</h2>
+      <div class="form-intro">
+        <strong><i class="fas fa-info-circle"></i> Complete this form to get access</strong>
+        Fill out the screening form below to help us understand your goals. Only participants who complete this form will receive the WhatsApp community invite!
+      </div>
+
+      <div id="responseMessage" class="response-message"></div>
+
+      <form id="guild-form" name="guild-screening" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="guild-screening">
+
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="full-name">
+            <i class="fas fa-user"></i> Full Name *
+          </label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">
+            <i class="fas fa-envelope"></i> Email Address *
+          </label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Which skill are you most interested in? -->
+        <div class="form-group">
+          <label><i class="fas fa-graduation-cap"></i> Which skill are you most interested in? *</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="skill-cybersecurity" name="primary-skill" value="Cybersecurity" required>
+              <label for="skill-cybersecurity">Cybersecurity</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="skill-hacking" name="primary-skill" value="Ethical Hacking">
+              <label for="skill-hacking">Ethical Hacking</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="skill-analytics" name="primary-skill" value="Data Analytics">
+              <label for="skill-analytics">Data Analytics</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="skill-hybrid" name="primary-skill" value="Hybrid">
+              <label for="skill-hybrid">Hybrid (Combination of the above)</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- How many hours per day can you commit? -->
+        <div class="form-group">
+          <label for="daily-hours">
+            <i class="fas fa-clock"></i> How many hours per day can you commit? *
+          </label>
+          <select id="daily-hours" name="daily-hours" required>
+            <option value="">-- Select an option --</option>
+            <option value="Less than 1 hour">Less than 1 hour</option>
+            <option value="1-2 hours">1-2 hours</option>
+            <option value="2-3 hours">2-3 hours</option>
+            <option value="3-4 hours">3-4 hours</option>
+            <option value="More than 4 hours">More than 4 hours</option>
+          </select>
+        </div>
+
+        <!-- What is your primary goal? -->
+        <div class="form-group">
+          <label><i class="fas fa-target"></i> What is your primary goal? *</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="goal-job" name="primary-goal" value="Job" required>
+              <label for="goal-job">Land a job in tech</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="goal-freelancing" name="primary-goal" value="Freelancing">
+              <label for="goal-freelancing">Start freelancing</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="goal-bounty" name="primary-goal" value="Bug bounty">
+              <label for="goal-bounty">Participate in bug bounty programs</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="goal-skills" name="primary-goal" value="Skill-building">
+              <label for="goal-skills">Build skills for personal growth</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Do you agree to weekly check-ins and assignments? -->
+        <div class="form-group">
+          <label><i class="fas fa-handshake"></i> Commitment to Accountability *</label>
+          <div class="radio-group">
+            <div class="radio-option">
+              <input type="radio" id="commitment-yes" name="weekly-commitment" value="Yes" required>
+              <label for="commitment-yes">Yes, I agree to weekly check-ins and assignments</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="commitment-no" name="weekly-commitment" value="No">
+              <label for="commitment-no">No, I prefer a more flexible approach</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional: GitHub / LinkedIn -->
+        <div class="form-group">
+          <label for="portfolio">
+            <i class="fas fa-link"></i> Portfolio / Social Links (Optional)
+          </label>
+          <input type="text" id="portfolio" name="portfolio" placeholder="e.g., GitHub profile, LinkedIn, personal website">
+        </div>
+
+        <!-- Additional Comments -->
+        <div class="form-group">
+          <label for="comments">
+            <i class="fas fa-comment"></i> Anything Else We Should Know? (Optional)
+          </label>
+          <textarea id="comments" name="comments" placeholder="Tell us about your background, experience, or anything that might help us support you better..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">
+          <i class="fas fa-paper-plane"></i> Submit Application
+        </button>
+      </form>
+
+      <div id="whatsappLink" class="whatsapp-link">
+        <p style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="font-size: 1.5rem;"></i></p>
+        <p style="margin-bottom: 1rem; font-size: 1.1rem;"><strong>Thank you! Your application has been received.</strong></p>
+        <p style="margin-bottom: 1.5rem; opacity: 0.95;">Click the button below to join our WhatsApp community:</p>
+        <a href="https://chat.whatsapp.com/FswtcInprxNABzMjNbbe9Y" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-whatsapp"></i> Join WhatsApp Community
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">&lt;Harrisonjrn /&gt;</a>
+          <p>Building digital experiences that make an impact.</p>
+          <div class="social-links">
+            <a href="https://github.com/Daniel-code-OrbitForge" aria-label="GitHub" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harrison-daniel-36bb84378" aria-label="LinkedIn" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/DanielH62532053" aria-label="Twitter" class="social-link"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/Harrison.c.daniel" aria-label="Facebook" class="social-link"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="initiative.html">Initiative</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3>Get In Touch</h3>
+          <p><i class="fas fa-envelope"></i> harrisonjrn@proton.me</p>
+          <p><i class="fas fa-phone"></i> +233 (0) 559-080-863</p>
+          <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> Harrison Daniel Chinomso. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <span>|</span>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  
+  <script>
+    // Update current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Back to top button
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Form handling
+    const form = document.getElementById('guild-form');
+    const responseMessage = document.getElementById('responseMessage');
+    const whatsappLink = document.getElementById('whatsappLink');
+
+    if (form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Validate commitment response
+        const commitment = document.querySelector('input[name="weekly-commitment"]:checked').value;
+        if (commitment === 'No') {
+          responseMessage.className = 'response-message error';
+          responseMessage.innerHTML = '<strong><i class="fas fa-exclamation-circle"></i> Note:</strong> This community requires weekly commitment. If you would still like to join, please contact us directly.';
+          responseMessage.style.display = 'block';
+          return;
+        }
+
+        // Submit form to Netlify
+        const formData = new FormData(form);
+        
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
+          // Hide form and show WhatsApp link
+          form.style.display = 'none';
+          whatsappLink.style.display = 'block';
+          responseMessage.style.display = 'none';
+          
+          // Scroll to WhatsApp link
+          setTimeout(() => {
+            whatsappLink.scrollIntoView({ behavior: 'smooth' });
+          }, 300);
+        })
+        .catch(error => {
+          responseMessage.className = 'response-message success';
+          responseMessage.innerHTML = '<strong><i class="fas fa-check-circle"></i> Success!</strong> Your application has been received. Redirecting to WhatsApp community...';
+          responseMessage.style.display = 'block';
+          
+          // Hide form and show WhatsApp link after short delay
+          setTimeout(() => {
+            form.style.display = 'none';
+            whatsappLink.style.display = 'block';
+          }, 1500);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
