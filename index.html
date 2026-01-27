@@ -25,6 +25,14 @@
 </head>
 
 <body>
+  <!-- Hidden Netlify Form for build-time detection -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="subject" />
+    <textarea name="message"></textarea>
+  </form>
+
   <!-- ===== Header & Navigation ===== -->
   <header class="header">
     <nav class="navbar container">

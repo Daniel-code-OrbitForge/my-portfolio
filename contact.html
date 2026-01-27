@@ -218,20 +218,35 @@
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
       contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitButton.disabled = true;
+
         const formData = new FormData(contactForm);
-        
+
         fetch('/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: new URLSearchParams(formData).toString()
         })
-        .then(() => {
-          contactForm.reset();
-          alert('Thank you! Your message has been sent successfully. I\'ll get back to you soon!');
+        .then(response => {
+          if (response.ok) {
+            contactForm.reset();
+            alert('Thank you! Your message has been sent successfully. I\'ll get back to you soon!');
+          } else {
+            throw new Error('Form submission failed');
+          }
         })
         .catch(error => {
-          alert('Message sent! I\'ll get back to you soon.');
-          contactForm.reset();
+          console.error('Form submission error:', error);
+          alert('There was an issue sending your message. Please try again or contact me directly via email.');
+        })
+        .finally(() => {
+          submitButton.innerHTML = originalButtonText;
+          submitButton.disabled = false;
         });
       });
     }
